@@ -5,32 +5,38 @@ module.exports = {
     container: false,
   },
   theme: {
-    // TODO: Uncomment this part of the code and the import of "defaultTheme" above, and complete TODOs
-    // fontFamily: {
-    //   // TODO: Add font families
-    //   //       Delete "mono" if it isn't needed
-    //   sans: ['', ...defaultTheme.fontFamily.sans],
-    //   mono: ['', ...defaultTheme.fontFamily.mono],
-    // },
+    fontFamily: {
+      sans: 'Roboto, sans-serif',
+    },
     colors: ({ colors }) => ({
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
-      // TODO: Add colors
-      // Make sure that they are prepared in the Figma and follow the naming primary/secondary/gray-${number}
-      // Example of correctly prepared colors in Figma — https://user-images.githubusercontent.com/20713191/143586876-5e834233-9639-4166-9811-b00e63820d98.png
-      // Example of incorrectly prepared colors in Figma — https://user-images.githubusercontent.com/20713191/143586974-6986149f-aee3-450c-a1dd-26e73e3aca02.png
-      // black: '',
-      // white: '',
-      // primary: {
-      //   1: '',
-      // },
-      // secondary: {
-      //   1: '',
-      // },
-      // gray: {
-      //   1: '',
-      // },
+      black: '#0E0A0F',
+      white: '#ffffff',
+      primary: {
+        1: '#9966FF',
+        2: '#CB6AFB',
+        3: '#F7E16E',
+      },
+      secondary: {
+        1: '#40BFAA',
+        2: '#4D66E5',
+        3: '#1AFFD9',
+        4: '#F04242',
+      },
+      gray: {
+        20: '#36293D',
+        30: '#504158',
+        40: '#695C70',
+        50: '#83758A',
+        60: '#9C91A1',
+        70: '#B5ACB9',
+        80: '#CDC8D0',
+        90: '#E6E3E8',
+        94: '#F0EEF1',
+        98: '#FAF9FA',
+      },
     }),
     screens: {
       '2xl': { max: '1919px' },
@@ -39,6 +45,15 @@ module.exports = {
       md: { max: '1023px' },
       sm: { max: '767px' },
       xs: { max: '359px' },
+    },
+    extend: {
+      dropShadow: {
+        headline: '0px 0px 20px rgba(255, 255, 255, 0.2)',
+      },
+      backgroundImage: () => ({
+        'tabs-border':
+          'linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);',
+      }),
     },
   },
   plugins: [require('tailwindcss-safe-area')],
