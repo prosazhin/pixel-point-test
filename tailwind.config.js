@@ -52,7 +52,7 @@ module.exports = {
       },
       backgroundImage: () => ({
         'tabs-border':
-          'linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);',
+          'linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(95, 64, 133, 1) 10%, rgba(95, 64, 133, 1) 90%, rgba(255, 255, 255, 0) 100%);',
       }),
     },
   },

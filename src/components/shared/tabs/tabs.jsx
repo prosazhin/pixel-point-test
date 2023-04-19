@@ -27,7 +27,7 @@ const Tabs = ({ className: additionalClassName, data, keyName, display, children
           </Tab>
         ))}
       </div>
-      <div className="absolute inset-x-0 bottom-0 z-10 h-[1px] w-full bg-tabs-border mix-blend-overlay" />
+      <div className="absolute inset-x-0 bottom-0 z-10 h-[1px] w-full bg-tabs-border opacity-60" />
     </Tab.List>
     {children}
   </Tab.Group>
