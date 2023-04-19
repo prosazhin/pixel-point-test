@@ -90,7 +90,7 @@ const Home = () => {
                         <Arrow className="ml-[8px] h-[10px] w-[20px] transition duration-300 ease-in-out group-hover:translate-x-[4px]" />
                       </a>
                     </div>
-                    <div className="h-auto min-w-[946px] max-w-[946px] xl:min-w-[900px] xl:max-w-[900px] lg:min-w-[800px] lg:max-w-[800px] md:min-w-min md:max-w-[536px] sm:min-w-full xs:min-w-full">
+                    <div className="h-auto min-w-[946px] max-w-[946px] rounded-2xl bg-white/20 xl:min-w-[900px] xl:max-w-[900px] lg:min-w-[800px] lg:max-w-[800px] md:min-w-min md:max-w-[536px] sm:min-w-full xs:min-w-full">
                       <Image
                         src={tab.image_url}
                         width={946}
