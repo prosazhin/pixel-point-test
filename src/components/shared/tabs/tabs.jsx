@@ -8,7 +8,7 @@ import React, { Fragment } from 'react';
 
 const Tabs = ({ className: additionalClassName, data, keyName, display, children, ...props }) => (
   <Tab.Group as="div" className={`${additionalClassName}`} {...props}>
-    <Tab.List className="relative w-full overflow-hidden">
+    <Tab.List className="relative w-full">
       <div className=" flex w-auto flex-row flex-nowrap justify-center space-x-[56px] overflow-x-auto md:justify-start xs:space-x-[32px]">
         {data.map((item) => (
           <Tab as={Fragment} key={item[keyName]}>
