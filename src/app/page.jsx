@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 import Divider from 'components/shared/divider';
 import Tabs from 'components/shared/tabs';
+import Arrow from 'icons/arrow.inline.svg';
 
 const data = [
   {
@@ -71,24 +72,33 @@ const Home = () => {
                   leaveTo="transform opacity-0 scale-90"
                   appear
                 >
-                  <div className="flex w-full flex-row items-center justify-center space-x-[80px] md:space-x-0 sm:flex-col sm:space-y-[48px] xs:space-y-[40px]">
-                    <div className="flex flex-col items-start justify-start space-y-[20px] xs:space-y-[16px]">
-                      <h3 className="w-full text-[60px] font-normal leading-[1.12em] tracking-[-0.01em] text-gray-98 drop-shadow-headline md:text-[40px] sm:text-[36px] xs:text-[28px]">
+                  <div className="flex w-full flex-row items-center justify-start space-x-[80px] md:space-x-0 sm:flex-col sm:items-start sm:space-y-[48px] xs:space-y-[40px]">
+                    <div className="flex w-[550px] flex-none flex-col items-start justify-start space-y-[20px] md:w-[400px] sm:w-full xs:w-full xs:space-y-[16px]">
+                      <h3 className="w-full text-[60px] font-normal leading-[1.12em] tracking-[-0.01em] text-gray-98 drop-shadow-headline md:pr-[68px] md:text-[40px] sm:pr-0 sm:text-[36px] xs:text-[28px]">
                         {tab.title}
                       </h3>
-                      <p className="text-[18px] font-light leading-normal tracking-[0.02em] text-gray-94 md:text-[16px] md:leading-snug">
+                      <p className="w-full pr-[50px] text-[18px] font-light leading-normal tracking-[0.02em] text-gray-94 md:pr-[68px] md:text-[16px] md:leading-snug sm:pr-0">
                         {tab.description}
                       </p>
                       <a
                         href="https://pixelpoint.io"
                         target="_blank"
                         rel="noreferrer"
-                        className="text-[16px] font-medium leading-none text-primary-1 transition hover:text-primary-2"
+                        className="group inline-flex flex-row items-center justify-start text-[16px] font-medium leading-none text-primary-1 transition hover:text-primary-2"
                       >
-                        Learn more
+                        <span>Learn more</span>
+                        <Arrow className="ml-[8px] h-[10px] w-[20px] transition duration-300 ease-in-out group-hover:translate-x-[4px]" />
                       </a>
                     </div>
-                    <Image src={tab.image_url} width={946} height={640} alt="image" />
+                    <div className="h-auto min-w-[946px] max-w-[946px] xl:min-w-[900px] xl:max-w-[900px] lg:min-w-[800px] lg:max-w-[800px] md:min-w-min md:max-w-[536px] sm:min-w-full xs:min-w-full">
+                      <Image
+                        src={tab.image_url}
+                        width={946}
+                        height={640}
+                        alt="image"
+                        className="h-auto w-full"
+                      />
+                    </div>
                   </div>
                 </Transition>
               </Tab.Panel>

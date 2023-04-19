@@ -13,7 +13,7 @@ const RootLayout = ({ children }) => (
       />
     </head>
     <body>
-      <main className="h-auto w-full py-[160px]">{children}</main>
+      <main className="h-auto w-full py-[80px]">{children}</main>
     </body>
   </html>
 );
