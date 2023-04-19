@@ -45,7 +45,7 @@ const Home = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <div className="m-auto block w-full max-w-[1472px] px-[44px] md:w-full sm:px-[28px] xs:px-[16px]">
+    <div className="m-auto block w-full max-w-[1472px] overflow-x-clip px-[44px] md:w-full sm:px-[28px] xs:px-[16px]">
       <section className="relative w-full after:absolute after:inset-x-0 after:top-[-120px] after:-z-10 after:m-auto after:h-[630px] after:w-[630px] after:rounded-full after:bg-primary-1 after:opacity-20 after:blur-[400px]">
         <Divider />
         <h2 className="inline-block w-full text-center text-[72px] font-normal leading-[1.12em] tracking-[-0.01em] text-gray-98 drop-shadow-headline md:text-[60px] sm:text-[48px] xs:text-[32px]">
